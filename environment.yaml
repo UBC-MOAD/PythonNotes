@@ -1,0 +1,30 @@
+# conda environment description file for PythonNotes repo
+#
+# Create a conda environment in which you can run the notebooks in this repo with:
+#
+#   $ conda env create -f environment.yaml
+#   $ conda activate moad-tools
+#
+# The environment will include all of the packages used in the notebooks in the repo.
+
+name: moad-python-notes
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - arrow
+  - bottleneck
+  - dask
+  - gsw
+  - jupyterlab
+  - matplotlib
+  - netCDF4
+  - pandas
+  - pip
+  - pytables
+  - python=3.8
+  - pytz
+  - scipy
+  - xarray
