@@ -17,6 +17,7 @@ dependencies:
   - arrow
   - bottleneck
   - dask
+  - geopandas
   - gsw
   - jupyterlab
   - matplotlib
