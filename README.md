@@ -14,7 +14,7 @@ GitHub web interface.
 You can also render them with things like the Javascript code-hiding button
 on nbviewer at https://nbviewer.jupyter.org/github/UBC-MOAD/PythonNotes/tree/master/
 
-This repo is linked to the [#moad-python-notes]() channel in the SalishSeaCast Slack workspace.
+This repo is linked to the [#moad-python-notes](https://salishseacast.slack.com/archives/C01319S2YJW) channel in the SalishSeaCast Slack workspace.
 Update notifications will appear there whenever anything is pushed to this repo.
 You can discuss things in the repo and ask questions there,
 or you can open an [issue on GitHub](https://github.com/UBC-MOAD/PythonNotes/issues).
