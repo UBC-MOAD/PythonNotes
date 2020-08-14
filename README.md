@@ -21,6 +21,17 @@ or you can open an [issue on GitHub](https://github.com/UBC-MOAD/PythonNotes/iss
 Issues have the advantage of keeping discussion threads together a little more seamlessly than having to remember to reply to a thread instead of just posting the the Slack chanel, but use whatever works best for you.
 Issue notifications will also appear in the Slack channel.
 
+If you want to run the notebooks in this repo locally:
+
+  1. Clone the repo
+  2. Create a conda environment (called `moad-python-notes`) containing the Python packages that the notebooks use with:
+
+         cd PythonNotes
+         conda env create -f environment.yaml
+
+  3. Activate the conda environment with `conda activate moad-python-notes`
+  4. Launch `jupyter lab` or `jupyter notebook`
+
 
 ## License
 
