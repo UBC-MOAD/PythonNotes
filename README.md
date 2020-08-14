@@ -32,6 +32,15 @@ If you want to run the notebooks in this repo locally:
   3. Activate the conda environment with `conda activate moad-python-notes`
   4. Launch `jupyter lab` or `jupyter notebook`
 
+If you are adding a new notebook that requires one or more Python packages that are not already in the conda environment:
+
+  1. Add the package(s) to the `dependencies:` list in `environment.yaml`
+  2. Update your activated conda environment with:
+
+         conda env update -f environment.yaml
+
+  3. Commit your change to `environment.yaml` (separately, or with your new notebook), and push the changes to GitHub
+
 
 ## License
 
