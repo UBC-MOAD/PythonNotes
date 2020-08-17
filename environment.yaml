@@ -17,6 +17,7 @@ dependencies:
   - arrow
   - bottleneck
   - cartopy
+  - cmocean
   - dask
   - geopandas
   - gsw
