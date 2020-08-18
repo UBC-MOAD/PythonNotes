@@ -16,6 +16,8 @@ channels:
 dependencies:
   - arrow
   - bottleneck
+  - cartopy
+  - cmocean
   - dask
   - geopandas
   - gsw
@@ -25,7 +27,7 @@ dependencies:
   - pandas
   - pip
   - pytables
-  - python=3.8
+  - python>=3.8
   - pytz
   - scipy
   - xarray
