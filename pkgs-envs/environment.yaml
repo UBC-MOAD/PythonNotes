@@ -1,0 +1,14 @@
+# conda environment description for Python packages and environments
+# session
+#
+# Create a conda environment in which the notebooks in this repo can be run
+# with
+#
+#   conda env create -f environment.yaml
+
+name: moad-pkgs-envs
+
+dependencies:
+  - jupyterlab
+  - python=3
+  - rise
