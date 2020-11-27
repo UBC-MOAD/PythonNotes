@@ -8,6 +8,9 @@
 
 name: moad-pkgs-envs
 
+channels:
+  - conda-forge
+
 dependencies:
   - jupyterlab
   - python=3
