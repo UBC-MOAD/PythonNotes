@@ -3,7 +3,7 @@
 # Create a conda environment in which you can run the notebooks in this repo with:
 #
 #   $ conda env create -f environment.yaml
-#   $ conda activate moad-tools
+#   $ conda activate moad-python-notes
 #
 # The environment will include all of the packages used in the notebooks in the repo.
 
