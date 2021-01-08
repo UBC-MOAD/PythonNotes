@@ -11,7 +11,6 @@ name: moad-python-notes
 
 channels:
   - conda-forge
-  - defaults
 
 dependencies:
   - arrow
