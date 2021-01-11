@@ -1,0 +1,20 @@
+# conda environment description file for xarray-dayavg example code
+#
+# Create a conda environment in which you can run the code in this dir with:
+#
+#   $ conda env create -f environment.yaml
+#   $ conda activate xarray-dayavg
+
+name: xarray-dayavg
+
+channels:
+  - conda-forge
+
+dependencies:
+  - arrow
+  - bottleneck
+  - dask
+  - h5netcdf
+  - netCDF4
+  - python>=3.8
+  - xarray
