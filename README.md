@@ -46,7 +46,7 @@ If you are adding a new notebook that requires one or more Python packages that 
 
 ![https://www.apache.org/licenses/LICENSE-2.0](https://img.shields.io/badge/license-Apache%202-cb2533.svg)
 
-The UBC EOAS MOAD Group PythonNotes notebooks and files are copyright 2020 by the [UBC EOAS MOAD Group](https://github.com/UBC-MOAD/docs/blob/master/CONTRIBUTORS.rst) and The University of British Columbia.
+The UBC EOAS MOAD Group PythonNotes notebooks and files are copyright 2020-2021 by the [UBC EOAS MOAD Group](https://github.com/UBC-MOAD/docs/blob/master/CONTRIBUTORS.rst) and The University of British Columbia.
 
 They are licensed under the Apache License, Version 2.0.
 http://www.apache.org/licenses/LICENSE-2.0
