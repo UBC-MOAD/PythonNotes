@@ -1,0 +1,20 @@
+# conda environment description file for Sphinx docs tutorial
+#
+# Create a conda environment in which you can run the code in this dir with:
+#
+#   $ conda env create -f environment.yaml
+#   $ conda activate sphinx-docs
+
+name: sphinx-docs
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - jupyterlab
+  - myst-parser
+  - nbsphinx
+  - python>=3.9
+  - sphinx
+  - sphinx_rtd_theme
