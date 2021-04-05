@@ -1,0 +1,22 @@
+name: dask
+
+channels:
+ - conda-forge
+ - defaults
+
+dependencies:
+ - dask
+ - python-graphviz
+ - pydot
+ - netcdf4
+ - pandas
+ - pip
+ - pytables
+ - python>=3.8
+ - pyyaml
+ - scipy
+ - xarray
+ - numpy
+ - jupyterlab
+
+prefix: /Users/rmueller/Projects/MOAD/env/dask.yaml
