@@ -1,0 +1,17 @@
+# conda environment description for Reshapr into session
+#
+# Create a conda environment in which the notebooks in this repo can be run
+# with
+#
+#   conda env create -f environment.yaml
+
+name: reshapr-intro
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - jupyterlab
+  - python=3
+  - rise
