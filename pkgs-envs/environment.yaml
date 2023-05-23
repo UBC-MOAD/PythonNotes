@@ -12,6 +12,14 @@ channels:
   - conda-forge
 
 dependencies:
-  - jupyterlab
+  - notebook
   - python=3
   - rise
+  # A packaging issue on 23-May-2023 made it necessary to list the following dependencies
+  # explicitly. It is to be hoped that this situation is temporary.
+  - webcolors
+  - uri-template
+  - jsonpointer
+  - isoduration
+  - fqdn
+
