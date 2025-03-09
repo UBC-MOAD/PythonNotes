@@ -15,8 +15,8 @@ Descriptions under the links below are from the first cell of the notebooks
     It uses `xarray` to access the SalishSeaCast model datasets via the ERDDAP server.
     The observations are assumed to be defined by a collection of 4d time-space coordinates in a `pandas.DataFrame`.
     (Those could, of course, be read from a CSV file.)
-    The model field values closest to the observations are collected in an `xarray.Dataset` that is converted to a
-    `pandas.DataFrame` at the end of the notebook.
+    The model field values closest to the observations are combined with the observations to create a consolidated
+    `pandas.DataFrame`.
 
 
 
