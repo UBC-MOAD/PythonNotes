@@ -1,0 +1,19 @@
+# conda environment description for ERDDAP and ocean observations matching notebooks
+#
+# Create a conda environment in which the notebooks in this directory can be run
+# with:
+#
+#   conda env create -f environment.yaml
+
+name: erddap-obs-matching
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - netcdf4
+  - notebook
+  - pandas
+  - python=3.13
+  - xarray
