@@ -1,0 +1,25 @@
+[workspace]
+authors = ["UBC EOAS MOAD Group <https://github.com/UBC-MOAD/docs/blob/main/CONTRIBUTORS.rst>"]
+channels = ["conda-forge"]
+name = "moad-python-notes"
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[tasks]
+
+[dependencies]
+arrow = "*"
+bottleneck = "*"
+cartopy = "*"
+cmocean = "*"
+dask = "*"
+geopandas = "*"
+gsw = "*"
+jupyterlab = "*"
+matplotlib = "*"
+netcdf4 = "*"
+pandas = "*"
+pytables = "*"
+python = ">=3.14"
+pytz = "*"
+scipy = "*"
+xarray = "*"
