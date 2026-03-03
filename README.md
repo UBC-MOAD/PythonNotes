@@ -6,8 +6,8 @@ important, interesting, helpful, or just cool.
 
 Please feel free to contribute your knowledge to existing notebooks,
 or add new ones.
-For the moment this is just a single directory to keep things simple;
-perhaps we will categorize things into sub-directories if things get unweildy.
+There a bunch of general interest notebooks in the top level directory.
+Notebooks on specific topics have been categorized into sub-directories.
 
 The notebooks will probably render just fine if you click on them in the
 GitHub web interface.
@@ -27,24 +27,32 @@ Issue notifications will also appear in the Slack channel.
 If you want to run the notebooks in this repo locally:
 
   1. Clone the repo
-  2. Create a conda environment (called `moad-python-notes`) containing the Python packages
-     that the notebooks use with:
+  2. Ensure that you have [Pixi](https://pixi.prefix.dev/latest/) installed
+  3. Install the dependency packages to set up the `default` environment with:
 
-         cd PythonNotes
-         conda env create -f environment.yaml
+       ```bash
+       pixi install
+       ```
 
-  3. Activate the conda environment with `conda activate moad-python-notes`
-  4. Launch `jupyter lab` or `jupyter notebook`
+  4. Launch `jupyter lab` or `jupyter notebook` with:
+
+     ```bash
+     pixi run jupyter lab
+     ```
+
+     or
+
+     ```bash
+     pixi run jupyter notebook
+     ```
+
+     Or open a notebook in VS Code and select `.pixi/envs/default/bin/python` as the kernel
 
 If you are adding a new notebook that requires one or more Python packages that
 are not already in the conda environment:
 
-  1. Add the package(s) to the `dependencies:` list in `environment.yaml`
-  2. Update your activated conda environment with:
-
-         conda env update -f environment.yaml
-
-  3. Commit your change to `environment.yaml` (separately, or with your new notebook),
+  1. Add the package(s) to the Pixi manifest with `pixi add package1 package2 ...`
+  2. Commit updated `pixi.toml` and `pixi.lock` files (separately, or with your new notebook),
      and push the changes to GitHub
 
 
