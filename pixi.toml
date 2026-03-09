@@ -23,3 +23,11 @@ python = ">=3.14"
 pytz = "*"
 scipy = "*"
 xarray = "*"
+
+[feature.pkgs-envs.dependencies]
+python = "*"
+jupyter = "*"
+jupyterlab_rise = "*"
+
+[environments]
+pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
