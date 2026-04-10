@@ -30,7 +30,7 @@ jupyter = "*"
 jupyterlab_rise = "*"
 
 [feature.erddap-obs-matching]
-channels = ["conda-forge", "nodefaults"]
+channels = ["conda-forge"]
 
 [feature.erddap-obs-matching.dependencies]
 netcdf4 = "*"
@@ -39,6 +39,15 @@ pandas = "*"
 python = "3.13.*"
 xarray = "*"
 
+[feature.reshapr-intro]
+channels = ["conda-forge"]
+
+[feature.reshapr-intro.dependencies]
+jupyterlab = "*"
+python = "3.*"
+rise = "*"
+
 [environments]
 pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
 erddap-obs-matching = { features = ["erddap-obs-matching"], no-default-feature = true }
+reshapr-intro = { features = ["reshapr-intro"], no-default-feature = true }
