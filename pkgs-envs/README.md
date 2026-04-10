@@ -22,11 +22,11 @@ pixi install -e pkgs-envs
 * Launch `jupyter lab` or `jupyter notebook` with:
 
     ```bash
-    pixi run jupyter lab
+    pixi run -e pkgs-envs jupyter lab
     ```
   or
     ```bash
-    pixi run jupyter notebook
+    pixi run -e pkgs-envs jupyter notebook
     ```
 
   then open the notebook you're interested in.
