@@ -53,6 +53,35 @@ Descriptions under the links below are from the first cell of the notebooks
         readme += f"* ## [{fn}]({url}/{fn})  \n    \n"
         readme += notebook_description(fn)
 
+    using_notebooks = """
+## Using the Notebooks
+
+* Install [Pixi](https://pixi.prefix.dev/latest/) if you have not already done so
+
+* Install the `erddap-obs-matching` environment with:
+    ```bash
+    cd PythonNotes
+    pixi install -e erddap-obs-matching
+    ```
+
+* If you are using VSCode:
+
+  * Install the [Pixi Code extension](https://marketplace.visualstudio.com/items?itemName=renan-r-santos.pixi-code) 
+    if you have not already done so
+
+  * Open a notebook
+
+  * Use the `Select Kernel` button to select `.pixi/envs/erddap-obs-matching/bin/python`
+
+* If you want to use Jupyter Lab in a browser,
+  launch it with:
+
+    ```bash
+    pixi run -e erddap-obs-matching jupyter lab
+    ```
+
+"""
+
     license = f"""
 ## License
 
@@ -66,6 +95,7 @@ Please see the LICENSE file in this repository for details of the license.
 """
     with open("README.md", "wt") as f:
         f.writelines(readme)
+        f.writelines(using_notebooks)
         f.writelines(license)
 
 

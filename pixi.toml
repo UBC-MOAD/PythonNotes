@@ -1,0 +1,78 @@
+[workspace]
+authors = ["UBC EOAS MOAD Group <https://github.com/UBC-MOAD/docs/blob/main/CONTRIBUTORS.rst>"]
+channels = ["conda-forge"]
+name = "moad-python-notes"
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[tasks]
+
+[dependencies]
+arrow = "*"
+bottleneck = "*"
+cartopy = "*"
+cmocean = "*"
+dask = "*"
+geopandas = "*"
+gsw = "*"
+jupyterlab = "*"
+matplotlib = "*"
+netcdf4 = "*"
+pandas = "*"
+pytables = "*"
+python = ">=3.14"
+pytz = "*"
+scipy = "*"
+xarray = "*"
+
+[feature.pkgs-envs.dependencies]
+python = "*"
+jupyter = "*"
+jupyterlab_rise = "*"
+
+[feature.erddap-obs-matching]
+channels = ["conda-forge"]
+
+[feature.erddap-obs-matching.dependencies]
+netcdf4 = "*"
+notebook = "*"
+pandas = "*"
+python = "3.13.*"
+xarray = "*"
+
+[feature.reshapr-intro]
+channels = ["conda-forge"]
+
+[feature.reshapr-intro.dependencies]
+jupyterlab = "*"
+python = "3.*"
+rise = "*"
+
+[feature.sphinx-docs]
+channels = ["conda-forge"]
+
+[feature.sphinx-docs.dependencies]
+jupyterlab = "*"
+myst-parser = "*"
+nbsphinx = "*"
+python = ">=3.9"
+sphinx = "*"
+sphinx_rtd_theme = "*"
+
+[feature.xarray-dayavg]
+channels = ["conda-forge"]
+
+[feature.xarray-dayavg.dependencies]
+arrow = "*"
+bottleneck = "*"
+dask = "*"
+h5netcdf = "*"
+netcdf4 = "*"
+python = ">=3.8"
+xarray = "*"
+
+[environments]
+pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
+erddap-obs-matching = { features = ["erddap-obs-matching"], no-default-feature = true }
+reshapr-intro = { features = ["reshapr-intro"], no-default-feature = true }
+sphinx-docs = { features = ["sphinx-docs"], no-default-feature = true }
+xarray-dayavg = { features = ["xarray-dayavg"], no-default-feature = true }
