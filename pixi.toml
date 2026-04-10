@@ -29,5 +29,16 @@ python = "*"
 jupyter = "*"
 jupyterlab_rise = "*"
 
+[feature.erddap-obs-matching]
+channels = ["conda-forge", "nodefaults"]
+
+[feature.erddap-obs-matching.dependencies]
+netcdf4 = "*"
+notebook = "*"
+pandas = "*"
+python = "3.13.*"
+xarray = "*"
+
 [environments]
 pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
+erddap-obs-matching = { features = ["erddap-obs-matching"], no-default-feature = true }
