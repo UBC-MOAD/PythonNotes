@@ -46,7 +46,15 @@ If you want to run the notebooks in this repo locally:
      pixi run jupyter notebook
      ```
 
-     Or open a notebook in VS Code and select `.pixi/envs/default/bin/python` as the kernel
+     Or,
+     if you use VS Code:
+
+     * Install the [Pixi Code extension](https://marketplace.visualstudio.com/items?itemName=renan-r-santos.pixi-code) 
+     if you have not already done so
+
+     * Open a notebook
+
+     * Use the `Select Kernel` button to select `.pixi/envs/default/bin/python` as the kernel
 
 If you are adding a new notebook that requires one or more Python packages that
 are not already in the conda environment:
