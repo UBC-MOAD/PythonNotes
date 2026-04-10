@@ -47,7 +47,19 @@ jupyterlab = "*"
 python = "3.*"
 rise = "*"
 
+[feature.sphinx-docs]
+channels = ["conda-forge"]
+
+[feature.sphinx-docs.dependencies]
+jupyterlab = "*"
+myst-parser = "*"
+nbsphinx = "*"
+python = ">=3.9"
+sphinx = "*"
+sphinx_rtd_theme = "*"
+
 [environments]
 pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
 erddap-obs-matching = { features = ["erddap-obs-matching"], no-default-feature = true }
 reshapr-intro = { features = ["reshapr-intro"], no-default-feature = true }
+sphinx-docs = { features = ["sphinx-docs"], no-default-feature = true }
