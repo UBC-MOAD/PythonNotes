@@ -58,8 +58,21 @@ python = ">=3.9"
 sphinx = "*"
 sphinx_rtd_theme = "*"
 
+[feature.xarray-dayavg]
+channels = ["conda-forge"]
+
+[feature.xarray-dayavg.dependencies]
+arrow = "*"
+bottleneck = "*"
+dask = "*"
+h5netcdf = "*"
+netcdf4 = "*"
+python = ">=3.8"
+xarray = "*"
+
 [environments]
 pkgs-envs = { features = ["pkgs-envs"], no-default-feature = true }
 erddap-obs-matching = { features = ["erddap-obs-matching"], no-default-feature = true }
 reshapr-intro = { features = ["reshapr-intro"], no-default-feature = true }
 sphinx-docs = { features = ["sphinx-docs"], no-default-feature = true }
+xarray-dayavg = { features = ["xarray-dayavg"], no-default-feature = true }
